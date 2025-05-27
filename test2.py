@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Инициализация бота
-bot = Bot(token="7600389891:AAFbAE01_W_EXoPtG_uvTcr0wmRhWoJgRUo")
+bot = Bot(token="BOT_TOKEN")
 dp = Dispatcher()
 
 
@@ -107,7 +107,7 @@ def check_direction(direction, scores, achievements=0):
 
 
 # Загрузка данных
-UNIVERSITIES = load_universities(r"C:\Users\star_\PycharmProjects\PythonProject2\my\Книга1.xlsx")
+UNIVERSITIES = load_universities(PATH_TO_FILE)
 
 # Клавиатура для выбора вуза
 def university_keyboard():
